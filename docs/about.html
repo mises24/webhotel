@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HotelsByDay - About Us</title>
+
+    <meta name="description" content="HotelsByDay have been around for 15 years. This is our story.">
+    <meta name="author" content="HotelsByDay">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <img src="images/logo.png" alt="Hotel Logo" class="logo">
+            <img src="images/hotel.png" alt="Hotel View" class="header-image">
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="nav-title">About Us</div>
+
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Welcome</a>
+                <a href="book.html">Book</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content-grid">
+            <div class="box">
+                <h2>About Us</h2>
+                <p>
+                    We are a modern hotel offering comfort and flexibility.
+                    Perfect for business travelers and short stays.
+                </p>
+                <h2>Our Story</h2>
+                <p>
+                    We set out on a mission 15 years ago. We wanted to provide the best experience for our customers in
+                    one of the most beautiful sceneries in the world... yadda yadda
+                </p>
+            </div>
+
+            <div class="box">
+                <div class="box">
+                    <h2>Find Us Here</h2>
+                    <img src="images/about.png" alt="Hotel Location Map" class="map-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        HotelsByDay | Panorama View St. | 0123456789 | hotelsbyday@email.com
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>
