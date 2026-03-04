@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HotelsByDay - Book</title>
+
+    <meta name="description"
+        content="HotelsByDay offers luxury suites, beautiful scenery and unforgettable stays. Book your stay today.">
+    <meta name="author" content="HotelsByDay">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <img src="images/logo.png" alt="Hotel Logo" class="logo">
+            <img src="images/hotel.png" alt="Hotel View" class="header-image">
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="nav-title">Book</div>
+
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Welcome</a>
+                <a href="book.html">Book</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content-grid">
+            <div class="box">
+                <h2>We hope you enjoy your stay!</h2>
+                <p>
+                    Fill in the form to your right and treat yourself to a well-deserved break! Together we create
+                    memories!
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>Book Your Stay</h2>
+                <form id="bookForm">
+                    <input type="text" name="fullname" placeholder="Full Name" required pattern="[A-Za-z\s]+"
+                        title="Only letters and spaces allowed">
+
+                    <label for="from">From:</label>
+                    <input type="date" id="from" name="from" required>
+
+                    <label for="to">To:</label>
+                    <input type="date" id="to" name="to" required>
+
+                    <input type="number" name="guests" placeholder="Number of Guests" required min="1" step="1">
+
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        HotelsByDay | Panorama View St. | 0123456789 | hotelsbyday@email.com
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>
